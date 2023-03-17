@@ -517,3 +517,138 @@ pragma solidity ^0.8.17;
 //         }
 //     }
 // }
+
+//21
+// contract Event{
+//     event Log(address indexed sender, string message);
+//     event AnotherLog();
+
+//     function test() public {
+//         emit Log(msg.sender, "Hello World!");
+//         emit Log(msg.sender, "Hello EVM!");
+//         emit AnotherLog();
+//     }
+// }
+
+//22
+// contract X {
+//     string public name;
+//     constructor(string memory _name) {
+//         name = _name;
+//     }
+// }
+
+// contract Y {
+//     string public text;
+//     constructor(string memory _text){
+//         text = _text;
+//     }
+// }
+
+// contract B is X("Input to X"), Y('Input to Y') {
+//     constructor(string memory _name,string memory _text) X(_name) Y(_text) {}
+// }
+
+// contract D is X,Y {
+//     constructor() X("X was called") Y("Y was called") {}
+// }
+
+// contract E is X,Y {
+//     constructor() Y("Y was called") X("X was called") {}
+// }
+
+//23
+// contract A {
+//     fuction foo() public pure virtual returns (string memory) {
+//         return 'A';
+//     }
+// }
+
+// contract B is A {
+//     function foo() public pure virtual override returns (string memory) {
+//         return "B";
+//     }
+// }
+
+// contract C is  A {
+//     function foo() public pure virtual override returns (string memory) {
+//         return "C";
+//     }
+// }
+
+// contract D is B,C {
+//     function foo() public pure override(B,C) returns (string memory) {
+//         returns super.foo();
+//     }
+// }
+
+// contract E is C,B {
+//     function foo() public pure override(C,B) returns (string memory) {
+//         return super.foo();
+//     }
+// }
+
+// contract F is A,B {
+//     function foo() public pure override(A,B) returns (string memory) {
+//         retunr super.foo();
+//     }
+// }
+
+//24
+// contract A {
+//     string public name = "Contract A";
+//     function getName() public view returns (string memory) {
+//         return name;
+//     }
+
+//     contract C is A {
+//         constructor() {
+//             name = "Contract C";
+//         }
+//     }
+// }
+
+//25
+// contract A {
+//     event Log(string message);
+//     function foo() public virtual {
+//         emit Log("A.foo called");
+//     }
+
+//     function bar() public virtual {
+//         emit Log("A.bar called");
+//     }
+// }
+
+// contract B is A {
+//     function foo() public virtual override {
+//         emit Log("B.foo called");
+//     }
+
+//     function bar() public virtual override {
+//         emit Log('B.bar called');
+//         super.bar();
+//     }
+// }
+
+// contract C is A {
+//     function foo() public virtual override {
+//         emit Log("C.foo called");
+//         A.foo();
+//     }
+
+//     function bar() public virtual override {
+//         emit Log("C.bar called");
+//         super.bar();
+//     }
+// }
+
+// contract D is B,C {
+//     function foo() public override(B,C){
+//         super.foo();
+//     }
+//     function bar() public override(B,C){
+//         super.bar();
+//     }
+// }
+
