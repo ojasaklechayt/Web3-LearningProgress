@@ -19,3 +19,9 @@ https://www.linkedin.com/pulse/exploring-power-polygons-zk-evm-ojas-aklecha/?tra
 
 Added changes in Solidity PR for Solidity Docs - 
 https://github.com/ethereum/solidity/pull/14084
+
+## 08-04-2023
+
+Organized Web3 Session in my college with my DAOVITCC Team
+
+Twitter Thread Link - [https://twitter.com/ojasaklecha/status/1644720113176940545](https://twitter.com/ojasaklecha/status/1644720113176940545)
