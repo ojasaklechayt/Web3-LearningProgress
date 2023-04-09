@@ -28,4 +28,4 @@ Twitter Thread Link - [https://twitter.com/ojasaklecha/status/164472011317694054
 
 ## 09-04-2022
 
-Joining Buildspace - https://twitter.com/ojasaklecha/status/1644720113176940545
+Joined Buildspace - https://twitter.com/ojasaklecha/status/1644720113176940545
