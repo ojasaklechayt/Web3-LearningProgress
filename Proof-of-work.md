@@ -25,3 +25,7 @@ https://github.com/ethereum/solidity/pull/14084
 Organized Web3 Session in my college with my DAOVITCC Team
 
 Twitter Thread Link - [https://twitter.com/ojasaklecha/status/1644720113176940545](https://twitter.com/ojasaklecha/status/1644720113176940545)
+
+## 09-04-2022
+
+Joining Buildspace - https://twitter.com/ojasaklecha/status/1644720113176940545
